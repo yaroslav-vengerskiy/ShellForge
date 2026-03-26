@@ -1,0 +1,604 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		006FC47586155199D7B47A49 /* TerminalContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A530118BB0EFA9F3B0DD3A /* TerminalContainerView.swift */; };
+		206A395B71BD34C2409814A3 /* TerminalTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E86BB95C9E9C503812FF93 /* TerminalTab.swift */; };
+		2FB579387BB15A0B660BA55E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2626E206798FBCECE1BF00 /* SettingsView.swift */; };
+		43EB7D3FF9D5AA947F06617F /* ShellForgeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25CA25023D6B60940B82E771 /* ShellForgeApp.swift */; };
+		45C247DC586135E0866DCE7C /* HostEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CDE90022579D117CDE14A36 /* HostEditorView.swift */; };
+		4C435077DAB298F75C79F00D /* SwiftTerm in Frameworks */ = {isa = PBXBuildFile; productRef = 91505069BC2A92B56B846B15 /* SwiftTerm */; };
+		58F60E3256704256D33131DD /* SSHConfigParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE481778042B390A4CF7C051 /* SSHConfigParser.swift */; };
+		607864F83352AC5178660B62 /* Color+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892E6BD55F189A88F9DD50B4 /* Color+Hex.swift */; };
+		7170659918ED0BA2D2864469 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD8A7DD19A050B417754CF7 /* AppState.swift */; };
+		73DD8E0991442559873D7880 /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 01A83747E09BE0DD78B3CA1A /* KeychainAccess */; };
+		907C3D8A97369EB42DF429DA /* HostStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EE2F1C1D42918AC9E886C2 /* HostStore.swift */; };
+		B1C793107D2F0C8D78B8C69E /* SidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904B4014587B206220E205B9 /* SidebarView.swift */; };
+		B8BB8475C5DD2CA8C0E91C1B /* TerminalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CA2A2D0BF2E1EDC2832834 /* TerminalView.swift */; };
+		B905E7AC9EBFFEA7483AA04E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C098E48C293E86CFDF8003 /* ContentView.swift */; };
+		C2297F1BF6B3A46BC19ECA4C /* HostStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E24B6C1F07A055E177A25E5 /* HostStoreTests.swift */; };
+		C94738B55C884430F92F36C3 /* Host.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAE6A57096692E26715F6A5 /* Host.swift */; };
+		E5CA3DFF2C14020D0DCDB2C0 /* GRDB in Frameworks */ = {isa = PBXBuildFile; productRef = D4456B79DE636AA3BD92EC93 /* GRDB */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		77FCB9148277D1E3BEF99C8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A71A1EC825A47DF6139982ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 91402FBDC9AE708B35D55211;
+			remoteInfo = ShellForge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		15C098E48C293E86CFDF8003 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1BAE6A57096692E26715F6A5 /* Host.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Host.swift; sourceTree = "<group>"; };
+		1E24B6C1F07A055E177A25E5 /* HostStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostStoreTests.swift; sourceTree = "<group>"; };
+		25CA25023D6B60940B82E771 /* ShellForgeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShellForgeApp.swift; sourceTree = "<group>"; };
+		30A530118BB0EFA9F3B0DD3A /* TerminalContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerminalContainerView.swift; sourceTree = "<group>"; };
+		6CDE90022579D117CDE14A36 /* HostEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostEditorView.swift; sourceTree = "<group>"; };
+		6DD8A7DD19A050B417754CF7 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		76EE2F1C1D42918AC9E886C2 /* HostStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostStore.swift; sourceTree = "<group>"; };
+		892E6BD55F189A88F9DD50B4 /* Color+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Hex.swift"; sourceTree = "<group>"; };
+		8F2626E206798FBCECE1BF00 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		904B4014587B206220E205B9 /* SidebarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarView.swift; sourceTree = "<group>"; };
+		936A96399F10CC27E4C19970 /* ShellForgeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShellForgeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		94CBC4F68A00B1AE7AC9B2CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		973B013DC3C3C4C3FA6BBC29 /* ShellForge.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ShellForge.entitlements; sourceTree = "<group>"; };
+		97CA2A2D0BF2E1EDC2832834 /* TerminalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerminalView.swift; sourceTree = "<group>"; };
+		A6E86BB95C9E9C503812FF93 /* TerminalTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerminalTab.swift; sourceTree = "<group>"; };
+		CBB5CBEB9E11E12C03C51D62 /* ShellForge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShellForge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE481778042B390A4CF7C051 /* SSHConfigParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSHConfigParser.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2AB0C2A6CB7D49EA4A59CB1F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C435077DAB298F75C79F00D /* SwiftTerm in Frameworks */,
+				73DD8E0991442559873D7880 /* KeychainAccess in Frameworks */,
+				E5CA3DFF2C14020D0DCDB2C0 /* GRDB in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F897316BD81822B1EA9282A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F0D736BBEDB4A0652DB0AAF2 /* HostEditor */,
+				F1CE868B54B4F9915CB67BE8 /* Settings */,
+				9598844C38BE1AC07F2528B2 /* Sidebar */,
+				206D0765E47F540C4D0A2E0C /* Terminal */,
+				15C098E48C293E86CFDF8003 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1D57B7C0FA09E63747CA98AD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CBB5CBEB9E11E12C03C51D62 /* ShellForge.app */,
+				936A96399F10CC27E4C19970 /* ShellForgeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		206D0765E47F540C4D0A2E0C /* Terminal */ = {
+			isa = PBXGroup;
+			children = (
+				30A530118BB0EFA9F3B0DD3A /* TerminalContainerView.swift */,
+				97CA2A2D0BF2E1EDC2832834 /* TerminalView.swift */,
+			);
+			path = Terminal;
+			sourceTree = "<group>";
+		};
+		5CF2007C334B459D85528C48 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				892E6BD55F189A88F9DD50B4 /* Color+Hex.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		699063154B0999634FC18C90 = {
+			isa = PBXGroup;
+			children = (
+				FB871640C74D3F4D1FE3767F /* ShellForge */,
+				7486933BA99FC2F82DD724D3 /* Tests */,
+				1D57B7C0FA09E63747CA98AD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		71724AB200903E081FBE1942 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1BAE6A57096692E26715F6A5 /* Host.swift */,
+				A6E86BB95C9E9C503812FF93 /* TerminalTab.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7486933BA99FC2F82DD724D3 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				1E24B6C1F07A055E177A25E5 /* HostStoreTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		775F8AE5529956C5C1D81A20 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				76EE2F1C1D42918AC9E886C2 /* HostStore.swift */,
+				DE481778042B390A4CF7C051 /* SSHConfigParser.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		9598844C38BE1AC07F2528B2 /* Sidebar */ = {
+			isa = PBXGroup;
+			children = (
+				904B4014587B206220E205B9 /* SidebarView.swift */,
+			);
+			path = Sidebar;
+			sourceTree = "<group>";
+		};
+		DFEA772D55C7BBBFCF08DFF2 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				6DD8A7DD19A050B417754CF7 /* AppState.swift */,
+				25CA25023D6B60940B82E771 /* ShellForgeApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		F0D736BBEDB4A0652DB0AAF2 /* HostEditor */ = {
+			isa = PBXGroup;
+			children = (
+				6CDE90022579D117CDE14A36 /* HostEditorView.swift */,
+			);
+			path = HostEditor;
+			sourceTree = "<group>";
+		};
+		F1CE868B54B4F9915CB67BE8 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				8F2626E206798FBCECE1BF00 /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		F9A14B45D4854233FB2E888B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				94CBC4F68A00B1AE7AC9B2CF /* Info.plist */,
+				973B013DC3C3C4C3FA6BBC29 /* ShellForge.entitlements */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FB871640C74D3F4D1FE3767F /* ShellForge */ = {
+			isa = PBXGroup;
+			children = (
+				DFEA772D55C7BBBFCF08DFF2 /* App */,
+				5CF2007C334B459D85528C48 /* Extensions */,
+				71724AB200903E081FBE1942 /* Models */,
+				F9A14B45D4854233FB2E888B /* Resources */,
+				775F8AE5529956C5C1D81A20 /* Services */,
+				0F897316BD81822B1EA9282A /* Views */,
+			);
+			path = ShellForge;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3B2C7252DF88384328585EA6 /* ShellForgeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C7A7C2C16F476875F73F130A /* Build configuration list for PBXNativeTarget "ShellForgeTests" */;
+			buildPhases = (
+				F83F9348FCBECB89DBCC6FEB /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				47660DB4F0D9775612E1C01C /* PBXTargetDependency */,
+			);
+			name = ShellForgeTests;
+			packageProductDependencies = (
+			);
+			productName = ShellForgeTests;
+			productReference = 936A96399F10CC27E4C19970 /* ShellForgeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		91402FBDC9AE708B35D55211 /* ShellForge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC86C5DF7E8EB59197637704 /* Build configuration list for PBXNativeTarget "ShellForge" */;
+			buildPhases = (
+				A684A559A2C2CA584ECD6EC1 /* Sources */,
+				2AB0C2A6CB7D49EA4A59CB1F /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShellForge;
+			packageProductDependencies = (
+				91505069BC2A92B56B846B15 /* SwiftTerm */,
+				01A83747E09BE0DD78B3CA1A /* KeychainAccess */,
+				D4456B79DE636AA3BD92EC93 /* GRDB */,
+			);
+			productName = ShellForge;
+			productReference = CBB5CBEB9E11E12C03C51D62 /* ShellForge.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A71A1EC825A47DF6139982ED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					3B2C7252DF88384328585EA6 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Manual;
+					};
+					91402FBDC9AE708B35D55211 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = A33FA6C84E3231CD924E9689 /* Build configuration list for PBXProject "ShellForge" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 699063154B0999634FC18C90;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				4F46FD0F60945610B7A518A5 /* XCRemoteSwiftPackageReference "GRDB.swift" */,
+				17B456E26F5BECEBC6B04907 /* XCRemoteSwiftPackageReference "KeychainAccess" */,
+				70AB1AA6A289FE6EC0A07A23 /* XCRemoteSwiftPackageReference "NMSSH-Swift" */,
+				BB6A352B429423F207C29425 /* XCRemoteSwiftPackageReference "SwiftTerm" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 1D57B7C0FA09E63747CA98AD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				91402FBDC9AE708B35D55211 /* ShellForge */,
+				3B2C7252DF88384328585EA6 /* ShellForgeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A684A559A2C2CA584ECD6EC1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7170659918ED0BA2D2864469 /* AppState.swift in Sources */,
+				607864F83352AC5178660B62 /* Color+Hex.swift in Sources */,
+				B905E7AC9EBFFEA7483AA04E /* ContentView.swift in Sources */,
+				C94738B55C884430F92F36C3 /* Host.swift in Sources */,
+				45C247DC586135E0866DCE7C /* HostEditorView.swift in Sources */,
+				907C3D8A97369EB42DF429DA /* HostStore.swift in Sources */,
+				58F60E3256704256D33131DD /* SSHConfigParser.swift in Sources */,
+				2FB579387BB15A0B660BA55E /* SettingsView.swift in Sources */,
+				43EB7D3FF9D5AA947F06617F /* ShellForgeApp.swift in Sources */,
+				B1C793107D2F0C8D78B8C69E /* SidebarView.swift in Sources */,
+				006FC47586155199D7B47A49 /* TerminalContainerView.swift in Sources */,
+				206A395B71BD34C2409814A3 /* TerminalTab.swift in Sources */,
+				B8BB8475C5DD2CA8C0E91C1B /* TerminalView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F83F9348FCBECB89DBCC6FEB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2297F1BF6B3A46BC19ECA4C /* HostStoreTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		47660DB4F0D9775612E1C01C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 91402FBDC9AE708B35D55211 /* ShellForge */;
+			targetProxy = 77FCB9148277D1E3BEF99C8A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		07E6E60754D66578A75F412B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ShellForge/Resources/ShellForge.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ShellForge/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shellforge.ShellForge;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		889FFC2003CA72F8C393E0FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shellforge.ShellForgeTests;
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShellForge.app/Contents/MacOS/ShellForge";
+			};
+			name = Release;
+		};
+		AE26BC993002C8BCC6D310A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ShellForge/Resources/ShellForge.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ShellForge/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shellforge.ShellForge;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		BF0C9E38B5AD1993DC2B30A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shellforge.ShellForgeTests;
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShellForge.app/Contents/MacOS/ShellForge";
+			};
+			name = Debug;
+		};
+		D7F14D3AA6FFFE4FB31141AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = ShellForge;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		DB7D2F05A0C7B6FAEE75DFA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = ShellForge;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A33FA6C84E3231CD924E9689 /* Build configuration list for PBXProject "ShellForge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7F14D3AA6FFFE4FB31141AF /* Debug */,
+				DB7D2F05A0C7B6FAEE75DFA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C7A7C2C16F476875F73F130A /* Build configuration list for PBXNativeTarget "ShellForgeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF0C9E38B5AD1993DC2B30A9 /* Debug */,
+				889FFC2003CA72F8C393E0FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		DC86C5DF7E8EB59197637704 /* Build configuration list for PBXNativeTarget "ShellForge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE26BC993002C8BCC6D310A8 /* Debug */,
+				07E6E60754D66578A75F412B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		17B456E26F5BECEBC6B04907 /* XCRemoteSwiftPackageReference "KeychainAccess" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kishikawakatsumi/KeychainAccess";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.2.2;
+			};
+		};
+		4F46FD0F60945610B7A518A5 /* XCRemoteSwiftPackageReference "GRDB.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/groue/GRDB.swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+		70AB1AA6A289FE6EC0A07A23 /* XCRemoteSwiftPackageReference "NMSSH-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/nicktate/NMSSH-Swift";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		BB6A352B429423F207C29425 /* XCRemoteSwiftPackageReference "SwiftTerm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/migueldeicaza/SwiftTerm";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		01A83747E09BE0DD78B3CA1A /* KeychainAccess */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 17B456E26F5BECEBC6B04907 /* XCRemoteSwiftPackageReference "KeychainAccess" */;
+			productName = KeychainAccess;
+		};
+		91505069BC2A92B56B846B15 /* SwiftTerm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BB6A352B429423F207C29425 /* XCRemoteSwiftPackageReference "SwiftTerm" */;
+			productName = SwiftTerm;
+		};
+		D4456B79DE636AA3BD92EC93 /* GRDB */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4F46FD0F60945610B7A518A5 /* XCRemoteSwiftPackageReference "GRDB.swift" */;
+			productName = GRDB;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = A71A1EC825A47DF6139982ED /* Project object */;
+}
