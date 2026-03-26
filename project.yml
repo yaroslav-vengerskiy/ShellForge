@@ -19,10 +19,7 @@ settings:
 packages:
   SwiftTerm:
     url: https://github.com/migueldeicaza/SwiftTerm
-    from: "2.0.0"
-  NMSSH:
-    url: https://github.com/nicktate/NMSSH-Swift
-    branch: main
+    from: "1.12.0"
   KeychainAccess:
     url: https://github.com/kishikawakatsumi/KeychainAccess
     from: "4.2.2"
@@ -38,8 +35,11 @@ targets:
       - ShellForge
     dependencies:
       - package: SwiftTerm
+        product: SwiftTerm
       - package: KeychainAccess
+        product: KeychainAccess
       - package: GRDB
+        product: GRDB
     settings:
       base:
         INFOPLIST_FILE: ShellForge/Resources/Info.plist

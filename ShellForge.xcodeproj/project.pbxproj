@@ -272,7 +272,6 @@
 			packageReferences = (
 				4F46FD0F60945610B7A518A5 /* XCRemoteSwiftPackageReference "GRDB.swift" */,
 				17B456E26F5BECEBC6B04907 /* XCRemoteSwiftPackageReference "KeychainAccess" */,
-				70AB1AA6A289FE6EC0A07A23 /* XCRemoteSwiftPackageReference "NMSSH-Swift" */,
 				BB6A352B429423F207C29425 /* XCRemoteSwiftPackageReference "SwiftTerm" */,
 			);
 			preferredProjectObjectVersion = 77;
@@ -564,20 +563,12 @@
 				minimumVersion = 7.0.0;
 			};
 		};
-		70AB1AA6A289FE6EC0A07A23 /* XCRemoteSwiftPackageReference "NMSSH-Swift" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/nicktate/NMSSH-Swift";
-			requirement = {
-				branch = main;
-				kind = branch;
-			};
-		};
 		BB6A352B429423F207C29425 /* XCRemoteSwiftPackageReference "SwiftTerm" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/migueldeicaza/SwiftTerm";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 2.0.0;
+				minimumVersion = 1.12.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
