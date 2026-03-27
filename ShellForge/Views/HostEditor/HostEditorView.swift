@@ -25,6 +25,13 @@ struct HostEditorView: View {
                         Text("hostEditor.keyboardInteractive").tag(AuthMethod.keyboardInteractive)
                     }
 
+                    if host.authMethod == .password {
+                        SecureField("hostEditor.password", text: Binding(
+                            get: { host.password ?? "" },
+                            set: { host.password = $0.isEmpty ? nil : $0 }
+                        ))
+                    }
+
                     if host.authMethod == .publicKey {
                         HStack {
                             TextField("hostEditor.keyPath", text: Binding(

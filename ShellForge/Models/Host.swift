@@ -13,6 +13,7 @@ struct Host: Identifiable, Codable, Hashable {
     var port: Int
     var username: String
     var authMethod: AuthMethod
+    var password: String?
     var keyPath: String?
     var groupId: UUID?
     var tags: [String]
@@ -31,6 +32,7 @@ struct Host: Identifiable, Codable, Hashable {
         port: Int = 22,
         username: String = "root",
         authMethod: AuthMethod = .publicKey,
+        password: String? = nil,
         keyPath: String? = nil,
         groupId: UUID? = nil,
         tags: [String] = [],
@@ -48,6 +50,7 @@ struct Host: Identifiable, Codable, Hashable {
         self.port = port
         self.username = username
         self.authMethod = authMethod
+        self.password = password
         self.keyPath = keyPath
         self.groupId = groupId
         self.tags = tags
