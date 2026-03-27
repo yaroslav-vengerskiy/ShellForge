@@ -6,7 +6,7 @@ enum AuthMethod: String, Codable, CaseIterable {
     case keyboardInteractive
 }
 
-struct Host: Identifiable, Codable, Equatable {
+struct Host: Identifiable, Codable, Hashable {
     var id: UUID
     var alias: String
     var hostname: String
@@ -65,7 +65,7 @@ struct Host: Identifiable, Codable, Equatable {
     }
 }
 
-struct HostGroup: Identifiable, Codable, Equatable {
+struct HostGroup: Identifiable, Codable, Hashable {
     var id: UUID
     var name: String
     var parentId: UUID?
