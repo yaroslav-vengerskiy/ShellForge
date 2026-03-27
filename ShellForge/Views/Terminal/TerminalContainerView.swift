@@ -5,18 +5,16 @@ struct TerminalContainerView: View {
 
     var body: some View {
         VStack(spacing: 0) {
-            // Tab bar
             TabBarView()
 
             Divider()
 
-            // Active terminal
             if let activeId = appState.activeTabId,
                let tab = appState.tabs.first(where: { $0.id == activeId }) {
                 TerminalView(tab: tab)
                     .id(tab.id)
             } else {
-                Text("No active terminal")
+                Text("terminal.noActive")
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
                     .foregroundStyle(.secondary)
             }

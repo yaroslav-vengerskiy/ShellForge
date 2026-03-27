@@ -9,10 +9,9 @@ struct SettingsView: View {
 
     var body: some View {
         TabView {
-            // Terminal settings
             Form {
-                Section("Font") {
-                    Picker("Font", selection: $fontName) {
+                Section("settings.font") {
+                    Picker(String(localized: "settings.font"), selection: $fontName) {
                         Text("SF Mono").tag("SF Mono")
                         Text("Menlo").tag("Menlo")
                         Text("JetBrains Mono").tag("JetBrains Mono")
@@ -20,12 +19,12 @@ struct SettingsView: View {
                     }
 
                     Slider(value: $fontSize, in: 10...24, step: 1) {
-                        Text("Size: \(Int(fontSize))pt")
+                        Text("settings.fontSize \(Int(fontSize))")
                     }
                 }
 
-                Section("Theme") {
-                    Picker("Theme", selection: $theme) {
+                Section("settings.theme") {
+                    Picker(String(localized: "settings.theme"), selection: $theme) {
                         Text("Default").tag("Default")
                         Text("Dracula").tag("Dracula")
                         Text("Solarized Dark").tag("Solarized Dark")
@@ -35,17 +34,16 @@ struct SettingsView: View {
                 }
             }
             .formStyle(.grouped)
-            .tabItem { Label("Terminal", systemImage: "terminal") }
+            .tabItem { Label("settings.terminal", systemImage: "terminal") }
 
-            // General settings
             Form {
-                Section("SSH") {
-                    Toggle("Auto-reconnect on disconnect", isOn: .constant(true))
-                    Toggle("Send keep-alive packets", isOn: .constant(true))
+                Section("settings.ssh") {
+                    Toggle(String(localized: "settings.autoReconnect"), isOn: .constant(true))
+                    Toggle(String(localized: "settings.keepAlive"), isOn: .constant(true))
                 }
             }
             .formStyle(.grouped)
-            .tabItem { Label("General", systemImage: "gear") }
+            .tabItem { Label("settings.general", systemImage: "gear") }
         }
         .frame(width: 450, height: 350)
     }

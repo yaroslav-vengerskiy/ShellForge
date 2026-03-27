@@ -1,0 +1,59 @@
+/* App */
+"app.name" = "ShellForge";
+
+/* Welcome */
+"welcome.title" = "ShellForge";
+"welcome.subtitle" = "Нажмите **Cmd+N** чтобы добавить хост или **Cmd+T** для локального терминала";
+"welcome.newHost" = "Новый хост";
+"welcome.localTerminal" = "Локальный терминал";
+"welcome.importSSH" = "Импорт ~/.ssh/config";
+
+/* Sidebar */
+"sidebar.addHost" = "Добавить хост";
+"sidebar.hosts" = "%lld хостов";
+"sidebar.search" = "Поиск хостов...";
+"sidebar.filter.all" = "Все хосты";
+"sidebar.filter.recent" = "Недавние";
+"sidebar.filter.tags" = "Теги";
+
+/* Host Editor */
+"hostEditor.connection" = "Подключение";
+"hostEditor.alias" = "Название";
+"hostEditor.aliasPrompt" = "мой-сервер";
+"hostEditor.hostname" = "Адрес";
+"hostEditor.hostnamePrompt" = "192.168.1.1 или example.com";
+"hostEditor.username" = "Пользователь";
+"hostEditor.port" = "Порт";
+"hostEditor.auth" = "Аутентификация";
+"hostEditor.method" = "Метод";
+"hostEditor.publicKey" = "SSH-ключ";
+"hostEditor.password" = "Пароль";
+"hostEditor.keyboardInteractive" = "Интерактивный ввод";
+"hostEditor.keyPath" = "Путь к ключу";
+"hostEditor.keyPathPrompt" = "~/.ssh/id_ed25519";
+"hostEditor.browse" = "Обзор";
+"hostEditor.organization" = "Организация";
+"hostEditor.tags" = "Теги (через запятую)";
+"hostEditor.notes" = "Заметки";
+"hostEditor.cancel" = "Отмена";
+"hostEditor.save" = "Сохранить";
+
+/* Terminal */
+"terminal.noActive" = "Нет активного терминала";
+"terminal.local" = "Локальный";
+
+/* Menu */
+"menu.newConnection" = "Новое подключение";
+"menu.newTab" = "Новая вкладка";
+"menu.importSSH" = "Импорт из ~/.ssh/config";
+"menu.findInTerminal" = "Поиск в терминале";
+
+/* Settings */
+"settings.terminal" = "Терминал";
+"settings.font" = "Шрифт";
+"settings.fontSize" = "Размер: %lldпт";
+"settings.theme" = "Тема";
+"settings.general" = "Основные";
+"settings.ssh" = "SSH";
+"settings.autoReconnect" = "Автоподключение при разрыве";
+"settings.keepAlive" = "Отправлять keep-alive пакеты";

@@ -30,23 +30,23 @@ struct WelcomeView: View {
                 .font(.system(size: 64))
                 .foregroundStyle(.secondary)
 
-            Text("ShellForge")
+            Text("welcome.title")
                 .font(.largeTitle)
                 .fontWeight(.bold)
 
-            Text("Press \(Text("Cmd+N").bold()) to add a host or \(Text("Cmd+T").bold()) for a local terminal")
+            Text("welcome.subtitle")
                 .foregroundStyle(.secondary)
 
             HStack(spacing: 16) {
-                Button("New Host") {
+                Button(String(localized: "welcome.newHost")) {
                     appState.showNewHost = true
                 }
 
-                Button("Local Terminal") {
+                Button(String(localized: "welcome.localTerminal")) {
                     appState.addTab()
                 }
 
-                Button("Import ~/.ssh/config") {
+                Button(String(localized: "welcome.importSSH")) {
                     appState.importSSHConfig()
                 }
             }

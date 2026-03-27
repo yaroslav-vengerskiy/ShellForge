@@ -1,0 +1,59 @@
+/* App */
+"app.name" = "ShellForge";
+
+/* Welcome */
+"welcome.title" = "ShellForge";
+"welcome.subtitle" = "Press **Cmd+N** to add a host or **Cmd+T** for a local terminal";
+"welcome.newHost" = "New Host";
+"welcome.localTerminal" = "Local Terminal";
+"welcome.importSSH" = "Import ~/.ssh/config";
+
+/* Sidebar */
+"sidebar.addHost" = "Add Host";
+"sidebar.hosts" = "%lld hosts";
+"sidebar.search" = "Search hosts...";
+"sidebar.filter.all" = "All Hosts";
+"sidebar.filter.recent" = "Recent";
+"sidebar.filter.tags" = "Tags";
+
+/* Host Editor */
+"hostEditor.connection" = "Connection";
+"hostEditor.alias" = "Alias";
+"hostEditor.aliasPrompt" = "my-server";
+"hostEditor.hostname" = "Hostname";
+"hostEditor.hostnamePrompt" = "192.168.1.1 or example.com";
+"hostEditor.username" = "Username";
+"hostEditor.port" = "Port";
+"hostEditor.auth" = "Authentication";
+"hostEditor.method" = "Method";
+"hostEditor.publicKey" = "Public Key";
+"hostEditor.password" = "Password";
+"hostEditor.keyboardInteractive" = "Keyboard Interactive";
+"hostEditor.keyPath" = "Key Path";
+"hostEditor.keyPathPrompt" = "~/.ssh/id_ed25519";
+"hostEditor.browse" = "Browse";
+"hostEditor.organization" = "Organization";
+"hostEditor.tags" = "Tags (comma separated)";
+"hostEditor.notes" = "Notes";
+"hostEditor.cancel" = "Cancel";
+"hostEditor.save" = "Save";
+
+/* Terminal */
+"terminal.noActive" = "No active terminal";
+"terminal.local" = "Local";
+
+/* Menu */
+"menu.newConnection" = "New Connection";
+"menu.newTab" = "New Tab";
+"menu.importSSH" = "Import from ~/.ssh/config";
+"menu.findInTerminal" = "Find in Terminal";
+
+/* Settings */
+"settings.terminal" = "Terminal";
+"settings.font" = "Font";
+"settings.fontSize" = "Size: %lldpt";
+"settings.theme" = "Theme";
+"settings.general" = "General";
+"settings.ssh" = "SSH";
+"settings.autoReconnect" = "Auto-reconnect on disconnect";
+"settings.keepAlive" = "Send keep-alive packets";

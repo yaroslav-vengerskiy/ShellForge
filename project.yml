@@ -6,6 +6,11 @@ options:
   xcodeVersion: "16.0"
   createIntermediateGroups: true
   groupSortPosition: top
+  defaultConfig: Debug
+  developmentLanguage: en
+  knownRegions:
+    - en
+    - ru
 
 settings:
   base:

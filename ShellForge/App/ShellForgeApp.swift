@@ -13,26 +13,26 @@ struct ShellForgeApp: App {
         .windowStyle(.titleBar)
         .commands {
             CommandGroup(replacing: .newItem) {
-                Button("New Connection") {
+                Button(String(localized: "menu.newConnection")) {
                     appState.showNewHost = true
                 }
                 .keyboardShortcut("n", modifiers: .command)
 
-                Button("New Tab") {
+                Button(String(localized: "menu.newTab")) {
                     appState.addTab()
                 }
                 .keyboardShortcut("t", modifiers: .command)
 
                 Divider()
 
-                Button("Import from ~/.ssh/config") {
+                Button(String(localized: "menu.importSSH")) {
                     appState.importSSHConfig()
                 }
                 .keyboardShortcut("i", modifiers: [.command, .shift])
             }
 
             CommandGroup(after: .textEditing) {
-                Button("Find in Terminal") {
+                Button(String(localized: "menu.findInTerminal")) {
                     appState.showSearch = true
                 }
                 .keyboardShortcut("f", modifiers: .command)

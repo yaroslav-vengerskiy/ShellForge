@@ -6,9 +6,17 @@ struct SidebarView: View {
     @State private var selectedFilter: SidebarFilter = .all
 
     enum SidebarFilter: String, CaseIterable {
-        case all = "All Hosts"
-        case recent = "Recent"
-        case tags = "Tags"
+        case all
+        case recent
+        case tags
+
+        var title: LocalizedStringKey {
+            switch self {
+            case .all: return "sidebar.filter.all"
+            case .recent: return "sidebar.filter.recent"
+            case .tags: return "sidebar.filter.tags"
+            }
+        }
     }
 
     var filteredHosts: [Host] {
@@ -27,16 +35,14 @@ struct SidebarView: View {
 
     var body: some View {
         VStack(spacing: 0) {
-            // Filter picker
             Picker("", selection: $selectedFilter) {
                 ForEach(SidebarFilter.allCases, id: \.self) { filter in
-                    Text(filter.rawValue).tag(filter)
+                    Text(filter.title).tag(filter)
                 }
             }
             .pickerStyle(.segmented)
             .padding(8)
 
-            // Host list
             List(selection: $appState.selectedHost) {
                 if selectedFilter == .tags {
                     ForEach(appState.hostStore.allTags, id: \.self) { tag in
@@ -55,14 +61,14 @@ struct SidebarView: View {
                 }
             }
             .listStyle(.sidebar)
-            .searchable(text: $searchText, prompt: "Search hosts...")
+            .searchable(text: $searchText, prompt: Text("sidebar.search"))
         }
         .safeAreaInset(edge: .bottom) {
             HStack {
                 Button {
                     appState.showNewHost = true
                 } label: {
-                    Label("Add Host", systemImage: "plus")
+                    Label("sidebar.addHost", systemImage: "plus")
                 }
                 .buttonStyle(.borderless)
 

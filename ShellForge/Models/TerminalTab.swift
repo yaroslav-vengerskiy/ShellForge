@@ -9,7 +9,7 @@ struct TerminalTab: Identifiable, Equatable {
     init(id: UUID = UUID(), host: Host? = nil) {
         self.id = id
         self.host = host
-        self.title = host?.displayName ?? "Local"
+        self.title = host?.displayName ?? String(localized: "terminal.local")
         self.isConnected = false
     }
 
